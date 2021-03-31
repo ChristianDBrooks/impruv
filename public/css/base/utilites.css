@@ -10,6 +10,13 @@
 
 @media only screen and (min-width: 768px) {
   .gutter {
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .gutter {
     max-width: 1200px;
     margin: auto;
   }

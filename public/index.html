@@ -8,19 +8,25 @@
   <link rel='stylesheet' href='./css/pages/home.css'>
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
   <script src="js/main.js"></script>
-  <title>Steezy Starter</title>
+  <title>IMPRUV Podcast</title>
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="./assets/favicon/site.webmanifest">
 </head>
 <body>
-
+  
   <header class='bg-secondary gutter'>
     <!-- HEADER -->
     <div class='header'>
       <div class='start'>
-        <img onclick="location.href='index.html'" class='logo' src='./assets/steezy.svg' alt='steezy web designs logo'>
+        <div class="d-flex-row align-items-center justify-content-center">
+        <img onclick="location.href='index.html'" class='logo' src='./assets/logo.svg' alt='impruv podcast logo'>
+          <img class="social-icon" src="./assets/twitter.svg" alt="twitter">
+          <img class="social-icon" src="./assets/instagram.svg" alt="instagram">
+          <img class="social-icon" src="./assets/facebook.svg" alt="facebook">
+          <img class="social-icon" src="./assets/youtube.svg" alt="youtube">
+        </div>
       </div>
       <div class='end'>
   
@@ -30,70 +36,104 @@
           <div id='mobile-nav-tray'>
             <div id='mobile-nav-links'>
               <a class="text-dark" href='index.html'>Home</a>
-              <a href='./html/example.html'>Example</a>
+              <a href='./html/episodes.html'>Episodes</a>
+              <a href='./html/sponsors.html'>Sponsors</a>
+              <a href='#'>Contact</a>
             </div>
           </div>
         </div>
         <div class='desktop-nav'>
           <div id='desktop-nav-links'>          
             <a class='navlink-underline' href='index.html'>HOME</a>
-            <a href='./html/example.html'>EXAMPLE</a>
+            <a href='./html/episodes.html'>EPISODES</a>
+            <a href='./html/sponsors.html'>SPONSORS</a>
+            <a href='#'>CONTACT</a>
           </div>
         </div>
       </div>
     </div>
   </header>
-
-
-  <section class="padding-y bg-light">
-    <div class="gutter text-center">
-      <h1 class="margin-bottom page-heading text-center text-primary margin-0 padding-bottom">Theme Components</h1>
-      <p class="paragraph-la">
-        Below you will find all main wireframe components that can be used. The titles are self-explanatory, so you can use this page to set up topography and stylistic items.
-      </p>
-      <p class="paragraph-la">
-        To find an example of how all these wireframe items can be used in conjunction go to the example page <a class="text-accent" href="./html/example.html">here</a>.
-      </p>
+  
+  <!-- Hero -->
+  <section class="padding-y bg-light text-center">
+    <div class="gutter">
+      <h1 class="hero-heading margin-0">IMPRUV</h1>
+      <p class="paragraph-xl padding-y margin-0">A podcast learning from coaches and experts around the world.</p>
+      <button class="button-solid">Listen Now</button>
     </div>
   </section>
-
-  <!-- Content -->
+  
+  <!-- Episodes -->
   <section class="padding-y">
     <div class="gutter">
-
-      <!-- Hero Heading -->
-      <h1 class="padding-bottom hero-heading">Hero Heading</h1>
+      <h2 class="sub-page-heading">Episodes</h2>
+      <p class="paragraph-la">Check out all of our latest content and see what you like!</p>
   
-      <!-- Page Heading -->
-      <h1 class="padding-bottom page-heading">Page Heading</h1>
+      <div class="episodes padding-y">
+        <article class="episode bg-light">
+        </article>
+        <article class="episode bg-light">
+        </article>
+        <article class="episode bg-light">
+        </article>
+      </div>
   
-      <!-- Sub Page Heading -->
-      <h2 class="padding-bottom sub-page-heading">Sub Page Heading</h2>
-  
-      <!-- Body Heading -->
-      <h4 class="padding-bottom body-heading">Body Heading</h4>
-  
-      <!-- Extra Large Paragraph-->
-      <p class="padding-bottom paragraph-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, dicta ullam corrupti deleniti veritatis, est ipsam similique natus dignissimos blanditiis tenetur enim quas vel asperiores? Quibusdam magni sit ea beatae nihil dolorum, facilis harum voluptatibus, laborum, velit ex vel temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia ipsum est culpa delectus voluptates veritatis dignissimos iste nihil dolorum.</p>
-      
-      <!-- Large Paragraph-->
-      <p class="padding-bottom paragraph-la">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, dicta ullam corrupti deleniti veritatis, est ipsam similique natus dignissimos blanditiis tenetur enim quas vel asperiores? Quibusdam magni sit ea beatae nihil dolorum, facilis harum voluptatibus, laborum, velit ex vel temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia ipsum est culpa delectus voluptates veritatis dignissimos iste nihil dolorum.</p>
-      
-      <!-- Paragraph -->
-      <p class="padding-bottom paragraph-md">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, dicta ullam corrupti deleniti veritatis, est ipsam similique natus dignissimos blanditiis tenetur enim quas vel asperiores? Quibusdam magni sit ea beatae nihil dolorum, facilis harum voluptatibus, laborum, velit ex vel temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia ipsum est culpa delectus voluptates veritatis dignissimos iste nihil dolorum.</p>
-  
-      <!-- Small Paragraph -->
-      <p class="padding-bottom paragraph-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ipsa! Quos animi illo quibusdam quis velit ea consequatur suscipit, architecto nesciunt illum nihil officia porro odit labore impedit doloribus voluptate veniam alias temporibus sed quam enim aspernatur laboriosam quo! Explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vero, officia repellat corporis amet assumenda! Dolor velit nobis sequi repellendus.</p>
-  
-       <!-- Button Solid -->
-      <button class="button-solid">Solid Button</button>
-  
-       <!-- Button Outline -->
-      <button class="button-outline">Outline Button</button>
-
+      <button class="button-outline">More Episodes</button>
     </div>
   </section>
-
-</body>
-</html>
-<script src='./scripts/navbar.js'></script>
+  
+  <!-- Call To Action -->
+  <section class="parallax-bg-img placeholder-img">
+    <div class="gutter h-100 my-auto">
+      <div class="d-flex-row justify-content-around align-items-center text-secondary my-auto h-100">
+        <p class="text-thin paragraph-xl">Like the show? Leave us a comment or review!</p>
+        <button class="button-solid text-secondary">Review</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Host -->
+  <section class="padding-y">
+    <div class="gutter">
+      <h2 class="sub-page-heading">Meet the Host</h2>
+      <img class="img-round" width="200" height="200" src="https://picsum.photos/150" alt="a profile picture">
+      <h4 class="body-heading margin-bottom">David Olson</h4>
+      <p class="paragraph-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolor quam facilis iste debitis dolore, voluptatem delectus, minus officiis fuga ipsa odit nam unde numquam. Tempore totam voluptatem atque commodi unde delectus exercitationem officiis sapiente tempora. Repellendus tempore quod nihil impedit fuga consequuntur incidunt inventore, debitis obcaecati eligendi fugiat temporibus voluptate doloremque nulla nemo vero facere nostrum quasi amet ad sit placeat, aut iste rerum. Illum repudiandae nihil, voluptas doloribus dicta praesentium incidunt earum illo aspernatur excepturi, voluptatum, iure tenetur.</p>
+    </div>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer class='footer padding-y bg-light'>
+    <div class="gutter">
+      <div class="footer-grid">
+        <div class="footer-item">
+          <h3>Navigation</h3>
+          <a href='index.html'>Home</a>
+          <a href='./html/episodes.html'>Episodes</a>
+          <a href='./html/sponsors.html'>Sponsors</a>
+          <a href='./html/contact.html'>Contact</a>
+        </div>
+        <div class="footer-item">
+          <h3>Listen On</h3>
+          <a href='#'>Apple</a>
+          <a href='#'>Spotify</a>
+          <a href='#'>IHeartRadio</a>
+          <a href='#'>Radio Public</a>
+          <a href='#'>Radio.com</a>
+          <a href='#'>Deezer</a>
+          <a href='#'>Amazon Music</a>
+          <a href='#'>Gaana</a>
+          <a href='#'>Player FM</a>
+        </div>
+        <div class="footer-item">
+          <h3>Contact</h3>
+          <span onclick="location.href='tel:123-345-1234'">Phone: (123) 456-7890</span>
+          <span>Email: email@email.com</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  </body>
+  </html>
+  <script src='./scripts/navbar.js'></script>

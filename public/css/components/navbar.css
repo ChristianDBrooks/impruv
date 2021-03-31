@@ -215,7 +215,7 @@
 .navlink-underline {
   display: inline-block;
   border-bottom: 6px solid;
-  border-image-source: linear-gradient(45deg, red, orange);
+  border-image-source: linear-gradient(45deg, #26bffb, #26edfb);
   border-image-slice: 1;
   line-height: 2;
 }

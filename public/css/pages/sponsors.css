@@ -1,0 +1,40 @@
+@import url('../components/header.css');
+@import url('../components/navbar.css');
+@import url('../components/footer.css');
+@import url('../components/social-icon.css');
+
+.placeholder-img {
+  background-image: url('https://picsum.photos/3000');
+}
+
+.sponsors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 64px;
+}
+
+.product {
+  min-width: 100%;
+}
+
+.product > div {
+  padding: 16px;
+}
+
+.product button {
+  margin-top: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+}
