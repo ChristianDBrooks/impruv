@@ -7,6 +7,10 @@
   background-image: url('https://picsum.photos/3000');
 }
 
+#sponsor-text {
+  height: 500px;
+}
+
 .sponsors {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -20,6 +24,8 @@
 
 .product {
   min-width: 100%;
+  box-shadow: 0px 0px 12px -5px black;
+  border-radius: 10px;
 }
 
 .product > div {

@@ -7,6 +7,35 @@
   background-image: url('https://picsum.photos/1000/500');
 }
 
+.bg-1 {
+  background-image: url('../../assets/backgrounds/bg-6.jpg');
+  background-position: center;
+}
+
+.bg-2 {
+  background-image: url('../../assets/backgrounds/bg-7.jpg');
+}
+
+.bg-3 {
+  background-image: url('../../assets/backgrounds/bg-8.jpg');
+}
+
+#hero {
+  height: calc(100vh - 80px)
+}
+
+#platforms {
+  box-shadow: 0px 0px 12px 6px rgb(0 0 0 / 20%);
+  padding: 24px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  #platforms {
+    padding: 48px;
+  }
+}
+
 .episodes {
   display: grid;
   grid-template-columns: 1fr;
