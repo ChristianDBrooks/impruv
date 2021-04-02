@@ -112,7 +112,7 @@
 }
 
 #desktop-nav-links > a {
-  color: var(--secondary-color);
+  color: var(--grey-color);
   letter-spacing: 1px;
 }
 
@@ -123,7 +123,7 @@
   -ms-transition: all .35s ease; 
   transition: all .35s ease;
   
-  color: var(--accent-light-color);
+  color: var(--accent-color);
 }
 
 .navlink-underline {

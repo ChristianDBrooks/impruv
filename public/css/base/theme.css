@@ -87,3 +87,7 @@ p {
   filter: brightness(80%);
 }
 
+.button-radius {
+  border-radius: 1000px;
+}
+
