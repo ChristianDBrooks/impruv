@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='../css/base/styles.css'>
+  <link rel='stylesheet' href='../css/pages/contact.css'>
+  <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+  <title>IMPRUV Podcast</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon/site.webmanifest">
+</head>
+<body>
+
+  <div class="bg-1">
+    <header>
+      <!-- HEADER -->
+      <div class="header gutter">
+        <div class="start">
+          <div class="d-flex-row align-items-center justify-content-center">
+            <img onclick="location.href='index.html'" class="logo" src="../assets/logo.svg" alt="impruv podcast logo">
+            <img class="social-icon" src="../assets/social/twitter.svg" alt="twitter">
+            <img class="social-icon" src="../assets/social/instagram.svg" alt="instagram">
+            <img class="social-icon" src="../assets/social/youtube.svg" alt="youtube">
+            <img class="social-icon" src="../assets/social/facebook.svg" alt="facebook">
+          </div>
+        </div>
+        <div class="end">
+    
+          <!-- NAVBAR -->
+          <div id="mobile-nav" aria-hidden="">
+            <span id="mobile-nav-icon" class="material-icons" onclick="toggleNavbarTray()" aria-label="Toggle Menu">menu</span>
+            <div id="mobile-nav-tray">
+              <div id="mobile-nav-links">
+                <a href="../index.html">Home</a>
+                <a href="episodes.html">Episodes</a>
+                <a href="sponsors.html">Sponsors</a>
+                <a class="text-dark" href="contact.html">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-nav">
+            <div id="desktop-nav-links">          
+              <a href="../index.html">HOME</a>
+              <a href="episodes.html">EPISODES</a>
+              <a href="sponsors.html">SPONSORS</a>
+              <a class="navlink-underline" href="contact.html">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Hero -->
+    <section class="padding-y text-center">
+      <div class="gutter">
+        <h1 class="page-heading margin-0 text-accent">Contact</h1>
+      </div>
+    </section>
+  </div>
+
+  <!-- Contact Form -->
+  <section class="padding-y">
+    <div class="gutter">
+      <h4 class="sub-page-heading">
+        Drop Us A Line
+      </h4>
+      <div class="form-grid">
+        <p class="paragraph-md">
+          Are you a fan? Do you have advice for the show? Maybe you just want to talk to us! Use this form to get in touch.
+        </p>
+        <div class="form-card box-shadow-xs">
+          <form data-netlify="true" method="POST" name='contact'>
+            <div class="d-flex-row w-100">
+              <input class="w-50 margin-right" type="text" name="name" placeholder="Name" required>
+              <input class="w-50" type="email" name="email" placeholder="Email" required>
+            </div>
+            <input class="margin-top" type="text" name="subject" placeholder="Subject" required>
+            <textarea class="margin-top" type="textarea" name="message" rows="10" placeholder="Type a message..." required></textarea>
+            <input class="margin-top" type="submit" name="submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsor Form -->
+  <section class="padding-y bg-light">
+    <div class="gutter">
+      <h4 class="sub-page-heading">
+        Interested In Sponsoring?
+      </h4>
+      <div class="form-grid">
+        <p id="sponsor-p" class="paragraph-md">
+          For more information about sponsorship, and how to become one, use this form!
+        </p>
+        <div class="form-card box-shadow-xs bg-secondary">
+          <form data-netlify="true" method="POST" name='contact'>
+            <div class="d-flex-row w-100">
+              <input class="w-50 margin-right" type="text" name="name" placeholder="Name" required>
+              <input class="w-50" type="email" name="email" placeholder="Email" required>
+            </div>
+            <input class="margin-top" type="text" name="subject" placeholder="Subject" required>
+            <textarea class="margin-top" type="textarea" name="message" rows="10" placeholder="Type a message..." required></textarea>
+            <input class="margin-top" type="submit" name="submit">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media -->
+
+  <section class="padding-bottom text-center">
+    <div class="gutter">
+      <h4 class="sub-page-heading">
+        Something Else?
+      </h4>
+      <p class="paragraph-md padding-bottom">You can also reach out to us on social media.</p>
+      <img class="social-icon-lg" src="../assets/social/twitter.svg" alt="twitter">
+      <img class="social-icon-lg" src="../assets/social/instagram.svg" alt="instagram">
+      <img class="social-icon-lg" src="../assets/social/youtube.svg" alt="youtube">
+      <img class="social-icon-lg" src="../assets/social/facebook.svg" alt="facebook">
+    </div>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer class='footer padding-y bg-light'>
+    <div class="gutter">
+      <div class="footer-grid">
+        <div class="footer-item">
+          <h3>Navigation</h3>
+          <a href='../index.html'>Home</a>
+          <a href='episodes.html'>Episodes</a>
+        </div>
+        <div class="footer-item">
+          <h3>Listen On</h3>
+          <a href='#'>Apple</a>
+          <a href='#'>Spotify</a>
+          <a href='#'>IHeartRadio</a>
+          <a href='#'>Radio Public</a>
+          <a href='#'>Radio.com</a>
+          <a href='#'>Deezer</a>
+          <a href='#'>Amazon Music</a>
+          <a href='#'>Gaana</a>
+          <a href='#'>Player FM</a>
+        </div>
+        <div class="footer-item">
+          <h3>Contact</h3>
+          <span onclick="location.href='tel:123-345-1234'">Phone: (123) 456-7890</span>
+          <span>Email: email@email.com</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  </body>
+  </html>
+  <script src='../scripts/navbar.js'></script>

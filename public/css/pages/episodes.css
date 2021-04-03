@@ -3,10 +3,6 @@
 @import url('../components/footer.css');
 @import url('../components/social-icon.css');
 
-.placeholder-img {
-  background-image: url('https://picsum.photos/1000/500');
-}
-
 .featured-episode {
   padding: 32px;
   border-radius: 15px;
