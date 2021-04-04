@@ -3,8 +3,11 @@
 @import url('../components/footer.css');
 @import url('../components/social-icon.css');
 
-.placeholder-img {
-  background-image: url('https://picsum.photos/3000');
+.bg-1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 23%;
+  height: 50vh;
 }
 
 #sponsor-text {
