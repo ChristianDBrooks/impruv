@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@200;300;500&display=swap');
 
 :root {
   --primary-font: 'Montserrat', sans-serif;
@@ -16,11 +16,18 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: var(--secondary-font); 
  }
-
-.hero-heading {
-  font-size: 96px;
-  font-weight: 700;
-}
+ 
+ .hero-heading {
+   font-size: 72px;
+   font-weight: 700;
+  }
+  
+   @media only screen and (min-width: 768px) {
+    .hero-heading {
+      font-size: 96px;
+      font-weight: 700;
+    }
+  }
 
 .page-heading {
   font-size: 72px;
@@ -39,22 +46,27 @@ p {
 
 .paragraph-xl {
   font-size: 32px;
+  font-weight: 200;
+}
+
+.paragraph-xl {
+  font-size: 24px;
   font-weight: 300;
 }
 
 .paragraph-la {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .paragraph-md {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .paragraph-sm {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .button-solid {

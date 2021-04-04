@@ -11,7 +11,7 @@
 
 #mobile-nav-icon {
   z-index: 10001;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   cursor: pointer;
 }
 
@@ -112,7 +112,7 @@
 }
 
 #desktop-nav-links > a {
-  color: var(--grey-color);
+  color: var(--secondary-color);
   letter-spacing: 1px;
 }
 

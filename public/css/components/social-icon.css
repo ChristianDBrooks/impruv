@@ -4,3 +4,7 @@
   height: auto;
   padding-right: 8px;
 }
+
+.shape-fill {
+  fill: white;
+}

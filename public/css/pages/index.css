@@ -7,6 +7,17 @@
   height: calc(100vh - 80px)
 }
 
+@media only screen and (min-width: 768px) {
+  .gutter {
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+}
+
+.hero-button-text {
+  font-weight: 500;
+}
+
 #platforms {
   box-shadow: 0px 0px 12px 6px rgb(0 0 0 / 20%);
   padding: 24px;
@@ -44,8 +55,14 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 150px;
+  height: 50px;
   /* transform: rotateY(180deg); */
+}
+
+@media only screen and (min-width: 768px) {
+  .custom-shape-divider-bottom-1617315285 svg {
+    height: 150px;
+  }
 }
 
 .custom-shape-divider-bottom-1617315285 .shape-fill {
@@ -58,7 +75,7 @@
 
 .hero-button {
   border-radius: 100px;
-  border-color: var(--grey-color);
-  background-color: var(--grey-color);
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
   padding: 8px 20px;
 }
