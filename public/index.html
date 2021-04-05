@@ -12,6 +12,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./scripts/rss-parser.js"></script>
 </head>
 <body>
 
@@ -93,13 +95,8 @@
       <h2 class="sub-page-heading">Episodes</h2>
       <p class="paragraph-la">Check out all of our latest content and see what you like!</p>
 
-      <div class="episodes padding-y">
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
+      <div id="episodes" class="padding-y">
+
       </div>
 
       <button onclick="window.location='./html/episodes.html'" class="button-outline button-radius text-primary">More Episodes</button>
