@@ -13,6 +13,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="../assets/favicon/site.webmanifest">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../scripts/rss-parser.js"></script>
 </head>
 <body>
 
@@ -65,20 +67,11 @@
     <!-- Featured Episode -->
     <section class="padding-bottom">
       <div class="gutter">
-        <div class="featured-episode bg-secondary box-shadow-sm">
+        <div id="featured-episode" class="featured-episode bg-secondary box-shadow-sm">
           <h2 class="sub-page-heading margin-top">Featured Episode</h2>
-          <div class="featured-episode-flex">
-            <img class="margin-bottom margin-right" src="https://picsum.photos/200/140" alt="album picture for featured episode">
-            <div class="margin-left">
-              <h4 class="margin-0 body-header">Ep. 11 - Something of the Future</h4>
-              <p class="paragraph-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deserunt nisi est ut. Quam eaque temporibus impedit repellendus! Id asperiores, quibusdam facilis aperiam deserunt expedita sunt consectetur dolorem ipsam porro velit error atque repudiandae beatae, quos quo assumenda distinctio animi?</p>
-            </div>
-          </div>
-          <audio class="margin-top w-100" controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3">
-            Your browser does not support audio playback.
-          </audio>
+          <p class="paragraph-la text-left not-found-msg" hidden>No episodes found. Click <a class="text-accent" href="#">here</a> to subscribe to our podcast and find out when our next episode goes live.</p>
         </div>
-        </div>
+      </div>
     </section>
 
     <div class="custom-shape-divider-bottom-1617459971">
@@ -114,29 +107,10 @@
   <section class="padding-y text-center bg-gradient">
     <div class="gutter">
       <h2 class="sub-page-heading text-left text-secondary">Episode Library</h2>
-  
-      <div class="library padding-y">
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
+      <p class="paragraph-la text-secondary text-left not-found-msg" hidden>No episodes found. Click <a class="text-accent" href="#">here</a> to subscribe to our podcast and find out when our next episode goes live.</p>
+      <div id="library" class="library padding-y">
       </div>
-  
-      <button class="button-outline button-radius mx-auto text-secondary">Load More</button>
+      <button id="load-more-btn" onclick="loadMoreLibraryEpisodes()" class="button-outline button-radius mx-auto text-secondary">Load More</button>
     </div>
   </section>
 
