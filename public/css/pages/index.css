@@ -14,6 +14,11 @@
   }
 }
 
+.hero-button .d-flex-row {
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .hero-button-text {
   font-weight: 500;
 }
