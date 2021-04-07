@@ -1,0 +1,127 @@
+@import url('../components/header.css');
+@import url('../components/navbar.css');
+@import url('../components/footer.css');
+@import url('../components/social-icon.css');
+
+#hero {
+  height: calc(100vh - 80px)
+}
+
+#hero .gutter {
+  height: 50vh;
+}
+
+@media only screen and (min-width: 768px) {
+  .gutter {
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+}
+
+.hero-button .d-flex-row {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero-button-text {
+  font-weight: 500;
+}
+
+#platforms {
+  box-shadow: 0px 0px 12px 6px rgb(0 0 0 / 20%);
+  padding: 24px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  #platforms {
+    padding: 48px;
+  }
+}
+
+.custom-shape-divider-bottom-1617315285 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1617315285 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+  /* transform: rotateY(180deg); */
+}
+
+@media only screen and (min-width: 768px) {
+  .custom-shape-divider-bottom-1617315285 svg {
+    height: 150px;
+  }
+}
+
+.custom-shape-divider-bottom-1617315285 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.button-image {
+  padding-right: 8px;
+}
+
+.hero-button {
+  border-radius: 100px;
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  padding: 8px 20px;
+}
+
+
+/* -------------------- */
+
+#episodes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 64px;
+}
+
+.episode {
+  padding: 32px;
+  border-radius: 10px;
+}
+
+.episode-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .thumbnail {
+    width: 200px;
+    height: 200px;
+  }
+  .episode-flex {
+    flex-direction: row;
+  }
+  .episode-content {
+    padding-left: 16px;
+  }
+}
+
+audio {
+  margin-top: 16px;
+  width: 100%;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: var(--secondary-color);
+}

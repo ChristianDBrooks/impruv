@@ -6,6 +6,7 @@
 .featured-episode {
   padding: 32px;
   border-radius: 15px;
+  margin-bottom: 96px;
 }
 
 .featured-episode-flex {
@@ -13,10 +14,33 @@
   flex-direction: column;
 }
 
+.featured-thumbnail {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
 @media only screen and (min-width: 768px) {
+  .featured-thumbnail {
+    width: 200px;
+    height: 200px;
+  }
   .featured-episode-flex {
     flex-direction: row;
   }
+}
+
+.lib-audio-player {
+  width: 100%;
+  margin-top: auto;
+}
+
+.library-thumbnail {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .library {
@@ -38,8 +62,11 @@
 }
 
 .episode {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  border-radius: 10px;
   justify-self: center;
-  height: 400px;
   width: 100%;
 }
 
