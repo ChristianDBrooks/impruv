@@ -13,6 +13,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="../assets/favicon/site.webmanifest">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../scripts/rss-parser.js"></script>
 </head>
 <body>
 
@@ -22,11 +24,11 @@
       <div class="header gutter">
         <div class="start">
           <div class="d-flex-row align-items-center justify-content-center">
-            <img onclick="location.href='index.html'" class="logo" src="../assets/logo.svg" alt="impruv podcast logo">
-            <img class="social-icon" src="../assets/social/twitter.svg" alt="twitter">
-            <img class="social-icon" src="../assets/social/instagram.svg" alt="instagram">
-            <img class="social-icon" src="../assets/social/youtube.svg" alt="youtube">
-            <img class="social-icon" src="../assets/social/facebook.svg" alt="facebook">
+            <img onclick="location.href='../index.html'" class="logo" src="../assets/logo-white.svg" alt="impruv podcast logo">
+            <img class="social-icon" src="../assets/social/twitter-white.svg" alt="twitter">
+            <img class="social-icon" src="../assets/social/instagram-white.svg" alt="instagram">
+            <img class="social-icon" src="../assets/social/youtube-white.svg" alt="youtube">
+            <img class="social-icon" src="../assets/social/facebook-white.svg" alt="facebook">
           </div>
         </div>
         <div class="end">
@@ -65,20 +67,11 @@
     <!-- Featured Episode -->
     <section class="padding-bottom">
       <div class="gutter">
-        <div class="featured-episode bg-secondary box-shadow-sm">
+        <div id="featured-episode" class="featured-episode bg-secondary box-shadow-sm">
           <h2 class="sub-page-heading margin-top">Featured Episode</h2>
-          <div class="featured-episode-flex">
-            <img class="margin-bottom margin-right" src="https://picsum.photos/200/140" alt="album picture for featured episode">
-            <div class="margin-left">
-              <h4 class="margin-0 body-header">Ep. 11 - Something of the Future</h4>
-              <p class="paragraph-md">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deserunt nisi est ut. Quam eaque temporibus impedit repellendus! Id asperiores, quibusdam facilis aperiam deserunt expedita sunt consectetur dolorem ipsam porro velit error atque repudiandae beatae, quos quo assumenda distinctio animi?</p>
-            </div>
-          </div>
-          <audio class="margin-top w-100" controls src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3">
-            Your browser does not support audio playback.
-          </audio>
+          <p class="paragraph-la text-left not-found-msg" hidden>No episodes found. Click <a class="text-accent" href="#">here</a> to subscribe to our podcast and find out when our next episode goes live.</p>
         </div>
-        </div>
+      </div>
     </section>
 
     <div class="custom-shape-divider-bottom-1617459971">
@@ -94,7 +87,7 @@
   <!-- All Platforms -->
   <section class="padding-top bg-accent text-secondary">
     <div class="gutter">
-      <h4 class="body-heading margin-0 padding-bottom text-center">Find Impruv on Your Favorite Platform</h4>
+      <h4 class="body-heading margin-0 padding-bottom text-center">Find IMRPUV on Your Favorite Platform</h4>
       <div class="text-center">
         <button class="button-solid button-radius platform-btn margin-right margin-bottom text-secondary box-shadow-xs">Apple</button>
         <button class="button-solid button-radius platform-btn margin-right margin-bottom text-secondary box-shadow-xs">Spotify</button>
@@ -114,38 +107,19 @@
   <section class="padding-y text-center bg-gradient">
     <div class="gutter">
       <h2 class="sub-page-heading text-left text-secondary">Episode Library</h2>
-  
-      <div class="library padding-y">
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
+      <p class="paragraph-la text-secondary text-left not-found-msg" hidden>No episodes found. Click <a class="text-accent" href="#">here</a> to subscribe to our podcast and find out when our next episode goes live.</p>
+      <div id="library" class="library padding-y">
       </div>
-  
-      <button class="button-outline button-radius mx-auto text-secondary">Load More</button>
+      <button id="load-more-btn" onclick="loadMoreLibraryEpisodes()" class="button-outline button-radius mx-auto text-secondary">Load More</button>
     </div>
   </section>
 
   <!-- Call To Action -->
-  <section class="parallax-bg-img bg-5">
+  <section class="parallax-bg-img bg-2">
     <div class="gutter h-100 my-auto">
       <div class="d-flex-row justify-content-around align-items-center text-secondary my-auto h-100">
         <p class="text-thin paragraph-xl">Like the show? Leave us a comment or review!</p>
-        <button class="button-solid button-radius text-secondary">Review</button>
+        <button onclick="window.location='contact.html'" class="button-solid button-radius text-secondary">Review</button>
       </div>
     </div>
   </section>
@@ -155,12 +129,17 @@
     <div class="gutter">
       <div class="footer-grid">
         <div class="footer-item">
-          <h3>Navigation</h3>
-          <a href='../index.html'>Home</a>
-          <a href='episodes.html'>Episodes</a>
+          <img class="margin-top" src="../assets/logo.svg" alt="the logo of impruv which is the word 'Impruv'">
         </div>
         <div class="footer-item">
-          <h3>Listen On</h3>
+          <h4 class="body-heading margin-top">Navigation</h4>
+          <a href='../index.html'>Home</a>
+          <a href='episodes.html'>Episodes</a>
+          <a href='sponsors.html'>Sponsors</a>
+          <a href='contact.html'>Contact</a>
+        </div>
+        <div class="footer-item">
+          <h4 class="body-heading margin-top">Listen On</h4>
           <a href='#'>Apple</a>
           <a href='#'>Spotify</a>
           <a href='#'>IHeartRadio</a>
@@ -172,8 +151,8 @@
           <a href='#'>Player FM</a>
         </div>
         <div class="footer-item">
-          <h3>Contact</h3>
-          <span onclick="location.href='tel:123-345-1234'">Phone: (123) 456-7890</span>
+          <h4 class="body-heading margin-top">Contact</h4>
+          <a class="text-accent" href="contact.html">Business Inquiries</a>
           <span>Email: email@email.com</span>
         </div>
       </div>

@@ -14,51 +14,53 @@
   <link rel="manifest" href="../assets/favicon/site.webmanifest">
 </head>
 <body>
-  
-<header class='bg-secondary gutter'>
-  <!-- HEADER -->
-  <div class='header'>
-    <div class='start'>
-      <div class="d-flex-row align-items-center justify-content-center">
-        <img onclick="location.href='index.html'" class='logo' src='../assets/logo.svg' alt='impruv podcast logo' />
-        <img class="social-icon" src="../assets/social/twitter.svg" alt="twitter" />
-        <img class="social-icon" src="../assets/social/instagram.svg" alt="instagram" />
-        <img class="social-icon" src="../assets/social/facebook.svg" alt="facebook" />
-        <img class="social-icon" src="../assets/social/youtube.svg" alt="youtube" />
-      </div>
-    </div>
-    <div class='end'>
 
-      <!-- NAVBAR -->
-      <div id='mobile-nav' aria-hidden="">
-        <span id='mobile-nav-icon' class='material-icons' onclick='toggleNavbarTray()' aria-label="Toggle Menu">menu</span>
-        <div id='mobile-nav-tray'>
-          <div id='mobile-nav-links'>
-            <a href='../index.html'>Home</a>
-            <a href='episodes.html'>Episodes</a>
-            <a class="text-dark" href='sponsors.html'>Sponsors</a>
-            <a href='#'>Contact</a>
+<div class="bg-1">
+  <header class='gutter'>
+    <!-- HEADER -->
+    <div class='header'>
+      <div class='start'>
+        <div class="d-flex-row align-items-center justify-content-center">
+          <img onclick="location.href='../index.html'" class='logo' src='../assets/logo-white.svg' alt='impruv podcast logo' />
+          <img class="social-icon" src="../assets/social/twitter-white.svg" alt="twitter" />
+          <img class="social-icon" src="../assets/social/instagram-white.svg" alt="instagram" />
+          <img class="social-icon" src="../assets/social/facebook-white.svg" alt="facebook" />
+          <img class="social-icon" src="../assets/social/youtube-white.svg" alt="youtube" />
+        </div>
+      </div>
+      <div class='end'>
+
+        <!-- NAVBAR -->
+        <div id='mobile-nav' aria-hidden="">
+          <span id='mobile-nav-icon' class='material-icons' onclick='toggleNavbarTray()' aria-label="Toggle Menu">menu</span>
+          <div id='mobile-nav-tray'>
+            <div id='mobile-nav-links'>
+              <a href='../index.html'>Home</a>
+              <a href='episodes.html'>Episodes</a>
+              <a class="text-dark" href='sponsors.html'>Sponsors</a>
+              <a href='contact.html'>Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class='desktop-nav'>
+          <div id='desktop-nav-links'>          
+            <a href='../index.html'>HOME</a>
+            <a href='episodes.html'>EPISODES</a>
+            <a class='navlink-underline' href='sponsors.html'>SPONSORS</a>
+            <a href='contact.html'>CONTACT</a>
           </div>
         </div>
       </div>
-      <div class='desktop-nav'>
-        <div id='desktop-nav-links'>          
-          <a href='../index.html'>HOME</a>
-          <a href='episodes.html'>EPISODES</a>
-          <a class='navlink-underline' href='sponsors.html'>SPONSORS</a>
-          <a href='#'>CONTACT</a>
-        </div>
-      </div>
     </div>
-  </div>
-</header>
-  
-<!-- Page Header -->
-<section class="padding-y bg-light text-center">
+  </header>    
+
+<!-- Hero -->
+<section class="padding-y text-center">
   <div class="gutter">
-    <h1 class="page-heading margin-0">Sponsors</h1>
+    <h1 class="page-heading margin-0 text-accent">Sponsors</h1>
   </div>
 </section>
+</div>
 
 <!-- Hero -->
 <section id='sponsor-text' class="padding-y">
@@ -82,8 +84,8 @@
 <section class="bg-dark padding-y">
   <div class="gutter h-100 my-auto">
     <div class="d-flex-row justify-content-around align-items-center text-secondary my-auto h-100">
-      <p class="text-thin paragraph-xl">Want your name up there? Get in touch!</p>
-      <button class="button-outline text-secondary">Contact Us</button>
+      <p class="text-thin paragraph-la">Want your name up there? Get in touch!</p>
+      <button class="button-outline button-radius text-secondary" onclick="window.location='contact.html'">Contact</button>
     </div>
   </div>
 </section>
@@ -129,36 +131,41 @@
     </div>
   </div>
 </section>
-
-<!-- FOOTER -->
-<footer class='footer padding-y bg-light'>
-  <div class="gutter">
-    <div class="footer-grid">
-      <div class="footer-item">
-        <h3>Navigation</h3>
-        <a href='../index.html'>Home</a>
-        <a href='episodes.html'>Episodes</a>
-      </div>
-      <div class="footer-item">
-        <h3>Listen On</h3>
-        <a href='#'>Apple</a>
-        <a href='#'>Spotify</a>
-        <a href='#'>IHeartRadio</a>
-        <a href='#'>Radio Public</a>
-        <a href='#'>Radio.com</a>
-        <a href='#'>Deezer</a>
-        <a href='#'>Amazon Music</a>
-        <a href='#'>Gaana</a>
-        <a href='#'>Player FM</a>
-      </div>
-      <div class="footer-item">
-        <h3>Contact</h3>
-        <span onclick="location.href='tel:123-345-1234'">Phone: (123) 456-7890</span>
-        <span>Email: email@email.com</span>
+  
+  <!-- FOOTER -->
+  <footer class='footer padding-y bg-light'>
+    <div class="gutter">
+      <div class="footer-grid">
+        <div class="footer-item">
+          <img class="margin-top" src="../assets/logo.svg" alt="the logo of impruv which is the word 'Impruv'">
+        </div>
+        <div class="footer-item">
+          <h4 class="body-heading margin-top">Navigation</h4>
+          <a href='../index.html'>Home</a>
+          <a href='episodes.html'>Episodes</a>
+          <a href='sponsors.html'>Sponsors</a>
+          <a href='contact.html'>Contact</a>
+        </div>
+        <div class="footer-item">
+          <h4 class="body-heading margin-top">Listen On</h4>
+          <a href='#'>Apple</a>
+          <a href='#'>Spotify</a>
+          <a href='#'>IHeartRadio</a>
+          <a href='#'>Radio Public</a>
+          <a href='#'>Radio.com</a>
+          <a href='#'>Deezer</a>
+          <a href='#'>Amazon Music</a>
+          <a href='#'>Gaana</a>
+          <a href='#'>Player FM</a>
+        </div>
+        <div class="footer-item">
+          <h4 class="body-heading margin-top">Contact</h4>
+          <a class="text-accent" href="contact.html">Business Inquiries</a>
+          <span>Email: email@email.com</span>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
   
 </body>
 </html>

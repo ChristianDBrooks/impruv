@@ -5,14 +5,15 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <link rel='stylesheet' href='./css/base/styles.css'>
-  <link rel='stylesheet' href='./css/pages/home.css'>
+  <link rel='stylesheet' href='./css/pages/index.css'>
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
-  <script src="js/main.js"></script>
   <title>IMPRUV Podcast</title>
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="./assets/favicon/site.webmanifest">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./scripts/rss-parser.js"></script>
 </head>
 <body>
 
@@ -22,11 +23,11 @@
       <div class="header gutter">
         <div class="start">
           <div class="d-flex-row align-items-center justify-content-center">
-            <img onclick="location.href='index.html'" class="logo" src="./assets/logo.svg" alt="impruv podcast logo">
-            <img class="social-icon" src="./assets/social/twitter.svg" alt="twitter">
-            <img class="social-icon" src="./assets/social/instagram.svg" alt="instagram">
-            <img class="social-icon" src="./assets/social/youtube.svg" alt="youtube">
-            <img class="social-icon" src="./assets/social/facebook.svg" alt="facebook">
+            <img onclick="location.href='index.html'" class="logo" src="./assets/logo-white.svg" alt="impruv podcast logo">
+            <img class="social-icon" src="./assets/social/twitter-white.svg" alt="twitter">
+            <img class="social-icon" src="./assets/social/instagram-white.svg" alt="instagram">
+            <img class="social-icon" src="./assets/social/youtube-white.svg" alt="youtube">
+            <img class="social-icon" src="./assets/social/facebook-white.svg" alt="facebook">
           </div>
         </div>
         <div class="end">
@@ -57,27 +58,29 @@
     
     <!-- Hero -->
     <section id="hero" class="padding-y text-left">
-      <div class="gutter">
-        <h1 class="hero-heading margin-0 text-accent padding-top">IMPRUV</h1>
-        <p class="paragraph-xl margin-0 text-grey padding-bottom" style="max-width: 600px;">A podcast learning from coaches and experts around the world.</p>
-        <button class="button-solid text-secondary hero-button text-left">
-          <div class="d-flex-row">            
-            <img class="button-image" src="./assets/spotify.svg" width="53px" alt="icon of the spotfy logo">
-            <div>
-              <p class="paragraph-sm margin-0">Listen On</p>
-              <p class="paragraph-la margin-0">Spotify</p>
+      <div class="gutter d-flex-col justify-content-center">
+        <h1 class="hero-heading margin-0 text-accent">IMPRUV</h1>
+        <p class="paragraph-xl margin-0 text-secondary padding-bottom" style="max-width: 600px;">A podcast learning from coaches and experts around the world.</p>
+        <div>
+          <button onclick="window.location.href='https://www.spotify.com'" class="button-solid text-secondary hero-button text-left">
+            <div class="d-flex-row">            
+              <img class="button-image" src="./assets/spotify.svg" width="45px" alt="icon of the spotfy logo">
+              <div>
+                <p class="paragraph-sm margin-0">Listen On</p>
+                <p class="paragraph-md margin-0 hero-button-text">Spotify</p>
+              </div>
             </div>
-          </div>
-        </button>
-        <button class="button-solid text-secondary hero-button text-left margin-left">
-          <div class="d-flex-row">            
-            <img class="button-image" src="./assets/apple-podcast.svg" width="53px" alt="icon of the apple podcast logo">
-            <div>
-              <p class="paragraph-sm margin-0">Listen On</p>
-              <p class="paragraph-la margin-0">Apple</p>
+          </button>
+          <button onclick="window.location.href='https://www.apple.com'"class="button-solid text-secondary hero-button text-left margin-left">
+            <div class="d-flex-row">            
+              <img class="button-image" src="./assets/apple-podcast.svg" width="45px" alt="icon of the apple podcast logo">
+              <div>
+                <p class="paragraph-sm margin-0">Listen On</p>
+                <p class="paragraph-md margin-0 hero-button-text">Apple</p>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
        </div>
     </section>
  
@@ -94,25 +97,20 @@
       <h2 class="sub-page-heading">Episodes</h2>
       <p class="paragraph-la">Check out all of our latest content and see what you like!</p>
 
-      <div class="episodes padding-y">
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
-        <article class="episode bg-light">
-        </article>
+      <div id="episodes" class="padding-y">
+
       </div>
 
-      <button class="button-outline button-radius text-primary">More Episodes</button>
+      <button onclick="window.location='./html/episodes.html'" class="button-outline button-radius text-primary">More Episodes</button>
     </div>
   </section>
   
   <!-- Call To Action -->
-  <section class="parallax-bg-img bg-5">
+  <section class="parallax-bg-img bg-2">
     <div class="gutter h-100 my-auto">
       <div class="d-flex-row justify-content-around align-items-center text-secondary my-auto h-100">
         <p class="text-thin paragraph-xl">Like the show? Leave us a comment or review!</p>
-        <button class="button-solid button-radius text-secondary">Review</button>
+        <button onclick="window.location='./html/contact.html'" class="button-solid button-radius text-secondary">Review</button>
       </div>
     </div>
   </section>
@@ -155,7 +153,7 @@
         </div>
         <div class="footer-item">
           <h4 class="body-heading margin-top">Contact</h4>
-          <a class="text-accent" href="html/contact.html">Business Inquiries</a>
+          <a class="text-accent" href="./html/contact.html">Business Inquiries</a>
           <span>Email: email@email.com</span>
         </div>
       </div>

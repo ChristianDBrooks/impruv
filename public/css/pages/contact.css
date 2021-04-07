@@ -29,7 +29,7 @@
 
 .form-card {
   border-radius: 10px;
-  padding: 48px;
+  padding: 32px;
 }
 
 form > * {
@@ -59,12 +59,9 @@ input[type='submit']:hover {
 }
 
 .social-icon-lg {
-  width: 72px;
+  width: 64px;
 }
 
-.social-icon-lg {
-  width: 72px;
-}
 .social-icon-lg:not(:last-child) {
   margin-right: 16px;
 }
