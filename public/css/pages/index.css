@@ -179,4 +179,9 @@ audio::-webkit-media-controls-panel {
   #right-column {
     display: block;
   }
+
+  #chevrons-img {
+    width: 50%;
+    margin-left: auto;
+  }
 }
