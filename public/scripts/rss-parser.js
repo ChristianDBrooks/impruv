@@ -1,5 +1,5 @@
 var episodeList = [];
-var feed = "https://feed.syntax.fm/rss";
+var feed = "https://impruv.libsyn.com/rss";
 var fetchSize = 28;
 var librarySize = 4;
 
@@ -10,8 +10,9 @@ $(document).ready(function() {
 function init() {
   createAudioPlayerEvent()
 
-  episodeList = JSON.parse(window.localStorage.getItem('episodes'))
-  if (!episodeList || episodeList.length == 0) {
+  episodeList = JSON.parse(window.localStorage.getItem('episodes')) 
+  if (true) {
+  // if (!episodeList || episodeList.length == 0) {
     fetchRssFeed(parseRssFeed);
   } else {
     injectEpisodes();
@@ -49,11 +50,13 @@ function parseRssFeed(data) {
     var el = $(this);
 
     const title = el.find("title").text();
-    const link = el.find("link").text();
-    const description = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi efficitur molestie vulputate. Fusce elit neque, hendrerit at libero quis, aliquet imperdiet ante.`
-    const thumbnail = el.find('itunes\\:image, image').attr('href')
+    const link = el.find('enclosure').attr('url')
+    const description = el.find('itunes\\:summary').text();
+    const thumbnail = el.find('itunes\\:image, image').attr('href');
+    console.log('title, link, description, thumbnail, enclosure', title, link, description, thumbnail)
 
     episodeList.push({title, link, description, thumbnail})
+    
   }));
 
   injectEpisodes();
@@ -74,9 +77,15 @@ function injectEpisodes() {
     libraryEpisodes.forEach(ep => {
       $('#library').append(newLibraryEpisode(ep.title, ep.link, ep.description, ep.thumbnail));
     })
-  } else {
+  }
+  
+  if (!episodeList || episodeList.length < 1 ) {
+    $('#not-found-msg').attr('hidden', false)
+  }
+
+  if (!episodeList || episodeList.length <= 1) {
     $('#load-more-btn').attr('hidden', true)
-    $('.not-found-msg').attr('hidden', false)
+    $('#library-not-found-msg').attr('hidden', false)
   }
 }
 
