@@ -4,11 +4,47 @@
 @import url('../components/social-icon.css');
 
 #hero {
-  height: calc(100vh - 80px)
+  height: calc(100vh - 80px);
 }
 
 #hero .gutter {
   height: 50vh;
+}
+
+#hero-grid {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#hero-content {
+  height: calc(100% - 94px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header-home {
+  width: auto;
+}
+
+#chevrons-img {
+  width: 100%;
+  max-width: 600px;
+  padding-bottom: 48px;
+}
+
+#left-column {
+  max-width: 100vw;
+  background-image: linear-gradient(to bottom, #267BFA, #26BFFB);
+}
+
+#right-column {
+  display: none;
+  background-image: url('../../assets/phone-in-hand.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -72,10 +108,10 @@
 }
 
 .hero-button {
+  box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
   border-color: var(--primary-color);
   background-color: var(--primary-color);
-  padding: 8px 20px;
 }
 
 
@@ -129,4 +165,18 @@ audio {
 
 audio::-webkit-media-controls-panel {
   background-color: var(--secondary-color);
+}
+
+@media only screen and (min-width: 768px) {
+  #hero-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #hero-content {
+    padding: 0 72px;
+  }
+
+  #right-column {
+    display: block;
+  }
 }

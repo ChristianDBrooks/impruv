@@ -25,3 +25,8 @@ a {
 .bg-2 {
   background-image: url('../../assets/backgrounds/headphones-80-min.jpg') !important;
 }
+
+
+.phone-in-hand {
+  background-image: url('../../assets/phone-in-hand.png') !important;
+}
