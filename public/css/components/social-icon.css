@@ -1,0 +1,10 @@
+.social-icon {
+  cursor: pointer;
+  width: 28px;
+  height: auto;
+  padding-right: 8px;
+}
+
+.shape-fill {
+  fill: white;
+}

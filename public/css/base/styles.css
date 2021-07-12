@@ -1,19 +1,5 @@
 @import url('./base.css');
 @import url('./utilites.css');
-
-/* Hero Heading */
-
-/* Sub Hero Heading */
-
-/* Page Heading */
-
-/* Section Title */
-
-/* Paragraph */
-
-/* Small Paragraph */
-
-/* Button Solid */
-
-/* Button Outline */
+@import url('./colors.css');
+@import url('./theme.css');
 

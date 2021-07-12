@@ -2,13 +2,13 @@
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 96px;
+  gap: 48px;
 }
 
 @media only screen and (min-width: 768px) {
   .footer-grid {
     width: fit-content;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 

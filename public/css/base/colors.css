@@ -2,34 +2,34 @@
 :root {
   --primary-color: #000000;
   --secondary-color: #FFFFFF;
-  --grey-color: #777777;
+  --grey-color: #424242;
   --light-color: #EEEEEE;
   --dark-color: #1A1A1A;
-  --accent-color: #FF7301;
+  --accent-color: #26bffb;
 }
 
 .bg-primary {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
 }
 
 .bg-secondary {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color) !important;
 }
 
 .bg-grey {
-  background-color: var(--grey-color);
+  background-color: var(--grey-color) !important;
 }
 
 .bg-light {
-  background-color: var(--light-color);
+  background-color: var(--light-color) !important;
 }
 
 .bg-dark {
-  background-color: var(--dark-color);
+  background-color: var(--dark-color) !important;
 }
 
 .bg-accent {
-  background-color: var(--accent-color);
+  background-color: var(--accent-color) !important;
 }
 
 .text-primary {

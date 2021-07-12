@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='stylesheet' href='../css/base/styles.css'>
+  <link rel='stylesheet' href='../css/pages/episodes.css'>
+  <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+  <title>IMPRUV Podcast</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon/site.webmanifest">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../scripts/rss-parser.js"></script>
+</head>
+<body>
+
+  <div class="fullscreen-bg-img bg-1">
+    <header>
+      <!-- HEADER -->
+      <div class="header gutter">
+        <div class="start">
+          <div class="d-flex-row align-items-center justify-content-center">
+            <img onclick="location.href='../index.html'" class="logo" src="../assets/logo-white.svg" alt="impruv podcast logo">
+            <img class="social-icon" src="../assets/social/twitter-white.svg" alt="twitter">
+            <img class="social-icon" src="../assets/social/instagram-white.svg" alt="instagram">
+            <img class="social-icon" src="../assets/social/youtube-white.svg" alt="youtube">
+            <img class="social-icon" src="../assets/social/facebook-white.svg" alt="facebook">
+          </div>
+        </div>
+        <div class="end">
+    
+          <!-- NAVBAR -->
+          <div id="mobile-nav" aria-hidden="">
+            <span id="mobile-nav-icon" class="material-icons" onclick="toggleNavbarTray()" aria-label="Toggle Menu">menu</span>
+            <div id="mobile-nav-tray">
+              <div id="mobile-nav-links">
+                <a href="../index.html">Home</a>
+                <a class="text-dark" href="episodes.html">Episodes</a>
+                <a href="sponsors.html">Sponsors</a>
+                <a href="contact.html">Contact</a>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-nav">
+            <div class='desktop-nav-links'>          
+              <a href="../index.html">HOME</a>
+              <a class="navlink-underline" href="episodes.html">EPISODES</a>
+              <a href="sponsors.html">SPONSORS</a>
+              <a href="contact.html">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Hero -->
+    <section class="padding-y text-center">
+      <div class="gutter">
+        <h1 class="page-heading margin-0 text-accent">Episodes</h1>
+      </div>
+    </section>
+
+    <!-- Featured Episode -->
+    <section class="padding-bottom">
+      <div class="gutter">
+        <div id="featured-episode" class="featured-episode bg-secondary box-shadow-sm">
+          <h2 class="sub-page-heading margin-top">Featured Episode</h2>
+          <p id="not-found-msg" class="paragraph-la text-left" hidden>No episodes found. Click <a class="text-accent" href="#">here</a> to subscribe to our podcast and find out when our next episode goes live.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="custom-shape-divider-bottom-1617459971">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+  </div>
+
+  <!-- All Platforms -->
+  <section class="padding-top bg-accent text-secondary">
+    <div class="gutter">
+      <h4 class="body-heading margin-0 padding-bottom text-center">Find IMRPUV on Your Favorite Platform</h4>
+      <div class="text-center">
+        <button class="button-solid button-radius platform-btn margin-right margin-bottom text-secondary box-shadow-xs">Apple</button>
+        <button class="button-solid button-radius platform-btn margin-right margin-bottom text-secondary box-shadow-xs">Spotify</button>
+        <button class="button-solid button-radius platform-btn margin-right margin-bottom text-secondary box-shadow-xs">IHeartRadio</button>
+        <button class="button-solid button-radius platform-btn margin-right margin-bottom text-secondary box-shadow-xs">Radio Public</button>
+        <button class="button-solid button-radius platform-btn margin-right margin-bottom text-secondary box-shadow-xs">Radio.com</button>
+        <button class="button-solid button-radius platform-btn margin-right margin-bottom text-secondary box-shadow-xs">Deezer</button>
+        <button class="button-solid button-radius platform-btn margin-right margin-bottom text-secondary box-shadow-xs">Amazon Music</button>
+        <button class="button-solid button-radius platform-btn margin-right margin-bottom text-secondary box-shadow-xs">Gaana</button>
+        <button class="button-solid button-radius platform-btn margin-right margin-bottom text-secondary box-shadow-xs">Player FM</button>
+      </div>
+    </div>
+  </section>
+   
+  
+  <!-- Episodes -->
+  <section class="padding-y text-center bg-gradient">
+    <div class="gutter">
+      <h2 class="sub-page-heading text-left text-secondary">Episode Library</h2>
+      <p id="library-not-found-msg" class="paragraph-la text-secondary text-left" hidden>No more episodes found. Click <a class="text-accent" href="#">here</a> to subscribe to our podcast and find out when our next episode goes live.</p>
+      <div id="library" class="library padding-y">
+      </div>
+      <button id="load-more-btn" onclick="loadMoreLibraryEpisodes()" class="button-outline button-radius mx-auto text-secondary">Load More</button>
+    </div>
+  </section>
+
+  <!-- Call To Action -->
+  <section class="parallax-bg-img bg-2">
+    <div class="gutter h-100 my-auto">
+      <div class="d-flex-row justify-content-around align-items-center text-secondary my-auto h-100">
+        <p class="text-thin paragraph-xl">Like the show? Leave us a comment or review!</p>
+        <button onclick="window.location='contact.html'" class="button-solid button-radius text-secondary">Review</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FOOTER -->
+  <footer class='footer padding-y bg-light'>
+    <div class="gutter">
+      <div class="footer-grid">
+        <div class="footer-item">
+          <img class="margin-top" src="../assets/logo.svg" alt="the logo of impruv which is the word 'Impruv'">
+        </div>
+        <div class="footer-item">
+          <h4 class="body-heading margin-top">Navigation</h4>
+          <a href='../index.html'>Home</a>
+          <a href='episodes.html'>Episodes</a>
+          <a href='sponsors.html'>Sponsors</a>
+          <a href='contact.html'>Contact</a>
+        </div>
+        <div class="footer-item">
+          <h4 class="body-heading margin-top">Listen On</h4>
+          <a href='#'>Apple</a>
+          <a href='#'>Spotify</a>
+          <a href='#'>IHeartRadio</a>
+          <a href='#'>Radio Public</a>
+          <a href='#'>Radio.com</a>
+          <a href='#'>Deezer</a>
+          <a href='#'>Amazon Music</a>
+          <a href='#'>Gaana</a>
+          <a href='#'>Player FM</a>
+        </div>
+        <div class="footer-item">
+          <h4 class="body-heading margin-top">Contact</h4>
+          <a class="text-accent" href="contact.html">Business Inquiries</a>
+          <span>Email: email@email.com</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  </body>
+  </html>
+  <script src='../scripts/navbar.js'></script>

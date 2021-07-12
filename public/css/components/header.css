@@ -1,14 +1,15 @@
 .header {
   width: 100%;
-  background-color: var(--secondary-color);
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
 }
 
 .logo {
-  padding: 16px;
+  padding: 28px 16px 28px 0px;
   width: 150px;
   height: auto;
+  cursor: pointer;
 }
 
 .end {
