@@ -18,60 +18,55 @@ p {
  }
  
  .hero-heading {
-   font-size: 72px;
+   font-size: 4.5rem;
    font-weight: 700;
   }
   
    @media only screen and (min-width: 768px) {
     .hero-heading {
-      font-size: 96px;
+      font-size: 5rem;
       font-weight: 700;
     }
   }
 
 .page-heading {
-  font-size: 72px;
+  font-size: 4.5rem;
   font-weight: 700;
 }
 
 .sub-page-heading {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 300;
 }
 
 .body-heading {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .paragraph-xl {
-  font-size: 32px;
-  font-weight: 200;
-}
-
-.paragraph-xl {
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: 300;
 }
 
 .paragraph-la {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
 .paragraph-md {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
 }
 
 .paragraph-sm {
-  font-size: 12px;
+  font-size: .75rem;
   font-weight: 300;
 }
 
 .button-solid {
   font-family: var(--primary-font);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   background-color: var(--accent-color);
   color: var(--primary-color);
