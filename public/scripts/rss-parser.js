@@ -1,5 +1,5 @@
 var episodeList = [];
-var feed = "https://impruv.libsyn.com/rss";
+var feed = "https://joeroganexp.libsyn.com/rss";
 var fetchSize = 28;
 var librarySize = 4;
 
